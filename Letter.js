@@ -17,3 +17,4 @@ var Letter = function (letter, display) {
         this.display = letter
     }
 }
+module.exports = Letter;
