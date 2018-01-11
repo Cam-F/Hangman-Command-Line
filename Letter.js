@@ -1,20 +1,8 @@
 // Letter constructor
+// Captures letter and changes it to uppercase
 
-var Letter = function (letter, display) {
+var Letter = function (letter) {
 
     this.letter = letter.toUpperCase();
-    this.display = " _ ";
-
-    // Methods
-
-    // Initially will return underscores
-    this.printLetters = function () {
-        return this.display;
-    }
-
-    // Changes the character to the correct letter
-    this.changeLetter = function() {
-        this.display = letter
-    }
 }
 module.exports = Letter;

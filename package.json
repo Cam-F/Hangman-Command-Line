@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/Cam-F/Hangman-Command-Line#readme",
   "dependencies": {
+    "figlet": "^1.2.0",
     "inquirer": "^5.0.0",
     "prompt": "^1.0.0"
   }
