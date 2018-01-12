@@ -3,8 +3,8 @@ var figlet = require("figlet");
 var inquirer = require("inquirer");
 
 // My Modules
-var Movie = require("./Movie");
 var Letter = require("./Letter");
+var Movie = require("./Movie");
 
 // Inquirer prompts
 var playGame = function (firstTime) {
@@ -19,21 +19,31 @@ var playGame = function (firstTime) {
             choices: ["YES", "NO"]
         }).then(function (answer) {
             if (answer.start === "NO") {
-                console.log("Go away then????");
+                console.log(figlet.textSync("LOL BYE THEN!"));
             } else {
-                guess();
+                getWord();
             }
         });
     }
 }
 
+var getWord = function(){
+    var newMovie = new Movie();
+    Letter(newMovie);
+    guess();
+}
+
 // Guess
-var guess = function (input) {
+function guess(word) {
+
     inquirer.prompt({
         name: "guess",
         message: "Guess a letter!"
     }).then(function (answer) {
-        // var newLetter = new (answer.guess);
+        var userGuess = answer.guess.toUpperCase();
+        console.log(userGuess);
+        
+        // for (var k = 0; k < )
     })
 }
 

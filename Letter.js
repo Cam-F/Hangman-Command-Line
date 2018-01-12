@@ -2,22 +2,27 @@
 var Movie = require("./Movie");
 
 // Function
-var Letter = function () {
-    this.word = new Movie();
-    this.movie = [];
-    this.remaining = word.length;
+var Letter = function (movie) {
+    this.word = movie
+    this.blankArr = [];
+    this.remaining = word.movie.length;
     this.lives = 10;
 
-    for (var i = 0; i < word.legnth; i++) {
+    for (var i = 0; i < this.word.movie.length; i++) {
 
-        if (selectedMovie[i] === " ") {
-            movie.push(" // ");
+        if (this.word.movie[i] === " ") {
+            blankArr.push(" // ");
             remaining--;
 
         } else {
-            movie.push(" _ ");
-            movie.join(" ");
+            blankArr.push(" _ ");
         }
     }
-    console.log(movie);
+    return word.movie;
+    return blankArr;
+    return remaining;
+    console.log(word.movie);
+    console.log(blankArr);
+    console.log(remaining);
 }
+module.exports = Letter;
