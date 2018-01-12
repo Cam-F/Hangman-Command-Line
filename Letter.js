@@ -1,8 +1,23 @@
-// Letter constructor
-// Captures letter and changes it to uppercase
+// My modules
+var Movie = require("./Movie");
 
-var Letter = function (letter) {
+// Function
+var Letter = function () {
+    this.word = new Movie();
+    this.movie = [];
+    this.remaining = word.length;
+    this.lives = 10;
 
-    this.letter = letter.toUpperCase();
+    for (var i = 0; i < word.legnth; i++) {
+
+        if (selectedMovie[i] === " ") {
+            movie.push(" // ");
+            remaining--;
+
+        } else {
+            movie.push(" _ ");
+            movie.join(" ");
+        }
+    }
+    console.log(movie);
 }
-module.exports = Letter;
